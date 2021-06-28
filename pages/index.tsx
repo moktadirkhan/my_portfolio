@@ -41,18 +41,20 @@ best possible output and adapting to work in any situation</h5>
 export const getServerSideProps=async(
   context:GetServerSideProps
 )=>{
+  const BASE_URL = process.env.VERCEL_URL;
+  return { props: { BASE_URL: BASE_URL } };
   // const res=await fetch('${process.env.VERCEL_URL}/api/services')
   // const res=await fetch('http://localhost:3000/api/services')
-  const res=await fetch('http://moktadirkhan.com/api/services')
-  const data =await res.json()
+  // const res=await fetch('http://moktadirkhan.com/api/services')
+  // const data =await res.json()
 
-  console.log("SERVER",services);
+  // console.log("SERVER",services);
   
-  return {
-    props:{
-      services:data.services,
-    },
-  }
+  // return {
+  //   props:{
+  //     services:data.services,
+  //   },
+  // }
 }
 
 // we can use this functions in such pages like FAQ, where we don need to render from the server
