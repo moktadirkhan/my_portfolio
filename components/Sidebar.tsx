@@ -26,7 +26,7 @@ const Sidebar = () => {
             <h3 className="my-4 text-3xl font-medium tracking-wider">Moktadir Khan</h3>     
             {/* tracking-wider is used for letter spacing */}
             <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
-            <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full" href="moktadirkhan.com/Md. Abdul Moktadir Khan - Resume.pdf" download="name">Download Resume</a>
+            <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full" href="/Md. Abdul Moktadir Khan - Resume.pdf" download="name">Download Resume</a>
 
             {/* social icons */}
             <div className="flex justify-around w-9/12 mx-auto my-5 md:w-full" >
